@@ -7,6 +7,6 @@ function addNumbers($parameter1, $parameter2) {
 
 $myVariable = addNumbers(12, 5);
 
-console.log(addNumbers(12, 5));
+//console.log(addNumbers(12, 5));
 
 //
