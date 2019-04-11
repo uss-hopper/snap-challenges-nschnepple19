@@ -13,14 +13,14 @@ let myNumber = -5;
 let firstNumber =29;
 
 
-//console.log(firstNumber);
+console.log(firstNumber);
 
-//console.log(multiplyNumbers(-2, myNumber));
-//console.log(multiplyNumbers(2, myNumber));
-//console.log(multiplyNumbers(-1, 5));
-//console.log(multiplyNumbers(6, 487635789));
+console.log(multiplyNumbers(-2, myNumber));
+console.log(multiplyNumbers(2, myNumber));
+console.log(multiplyNumbers(-1, 5));
+console.log(multiplyNumbers(6, 487635789));
 
-//console.log(firstNumber);
+console.log(firstNumber);
 
 /* *
 * Take two names and concatenate them into a full name.
@@ -33,5 +33,5 @@ function getFullName(firstName, lastName) {
 	return firstName + ' ' + lastName
 }
 
-//console.log(getFullName("Paul", "Schulzetenberg"));
+console.log(getFullName("Paul", "Schulzetenberg"));
 
