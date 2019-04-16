@@ -1128,13 +1128,11 @@
     <column id="273" parent="232" name="taskStartDate">
       <Position>3</Position>
       <DataType>datetime|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="274" parent="232" name="taskDueDate">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="275" parent="232" name="taskStatus">
@@ -1152,7 +1150,6 @@
     <column id="277" parent="232" name="taskDescription">
       <Position>7</Position>
       <DataType>varchar(256)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <index id="278" parent="232" name="taskId">

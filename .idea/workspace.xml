@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="734aff92-59e6-402c-bbb1-5d3c86023f97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/snap-04-16/snap-task.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,6 +23,11 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="97c0b57e-a4f4-40ff-a34c-d1a78770d714" />
+    </checked>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -214,7 +217,7 @@
       <workItem from="1554822813977" duration="500000" />
       <workItem from="1554837190251" duration="4810000" />
       <workItem from="1554991535483" duration="2941000" />
-      <workItem from="1555423412552" duration="1301000" />
+      <workItem from="1555423412552" duration="1784000" />
     </task>
     <task id="LOCAL-00001" summary="made header for html">
       <created>1554820026564</created>
@@ -262,17 +265,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13032000" />
+    <option name="totallyTimeSpent" value="13515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1655" y="105" width="1440" height="831" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26609442" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26609442" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32871288" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32611638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -280,7 +283,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32746956" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32673267" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32970297" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
