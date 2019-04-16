@@ -907,259 +907,393 @@
     <table id="227" parent="3" name="customer"/>
     <table id="228" parent="3" name="customerOrder"/>
     <table id="229" parent="3" name="item"/>
-    <table id="230" parent="3" name="orderItem"/>
-    <table id="231" parent="3" name="patron"/>
-    <table id="232" parent="3" name="task"/>
-    <column id="233" parent="226" name="billId">
+    <table id="230" parent="3" name="like"/>
+    <table id="231" parent="3" name="orderItem"/>
+    <table id="232" parent="3" name="patron"/>
+    <table id="233" parent="3" name="profile"/>
+    <table id="234" parent="3" name="task"/>
+    <table id="235" parent="3" name="tweet"/>
+    <column id="236" parent="226" name="billId">
       <Position>1</Position>
       <DataType>binary(16)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="234" parent="226" name="billPatronId">
+    <column id="237" parent="226" name="billPatronId">
       <Position>2</Position>
       <DataType>binary(16)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="235" parent="226" name="billStatus">
+    <column id="238" parent="226" name="billStatus">
       <Position>3</Position>
       <DataType>varchar(64)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="236" parent="226" name="billPatronId">
+    <index id="239" parent="226" name="billPatronId">
       <ColNames>billPatronId</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="237" parent="226" name="PRIMARY">
+    <key id="240" parent="226" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>billId</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="238" parent="226" name="bill_ibfk_1">
+    <foreign-key id="241" parent="226" name="bill_ibfk_1">
       <ColNames>billPatronId</ColNames>
       <RefSchemaName>nschnepple</RefSchemaName>
       <RefTableName>patron</RefTableName>
       <RefColNames>patronId</RefColNames>
     </foreign-key>
-    <column id="239" parent="227" name="customerId">
+    <column id="242" parent="227" name="customerId">
       <Position>1</Position>
       <DataType>binary(16)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="227" name="customerAddress">
+    <column id="243" parent="227" name="customerAddress">
       <Position>2</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="227" name="customerCity">
+    <column id="244" parent="227" name="customerCity">
       <Position>3</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="227" name="customerFirstName">
+    <column id="245" parent="227" name="customerFirstName">
       <Position>4</Position>
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="227" name="customerLastName">
+    <column id="246" parent="227" name="customerLastName">
       <Position>5</Position>
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="227" name="customerPhoneNumber">
+    <column id="247" parent="227" name="customerPhoneNumber">
       <Position>6</Position>
       <DataType>varchar(16)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="245" parent="227" name="customerId">
+    <index id="248" parent="227" name="customerId">
       <ColNames>customerId</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="246" parent="227" name="PRIMARY">
+    <key id="249" parent="227" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>customerId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="247" parent="228" name="customerOrderCustomerId">
+    <column id="250" parent="228" name="customerOrderCustomerId">
       <Position>1</Position>
       <DataType>binary(16)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="228" name="orderDateShipped">
+    <column id="251" parent="228" name="orderDateShipped">
       <Position>2</Position>
       <DataType>varchar(16)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="228" name="orderId">
+    <column id="252" parent="228" name="orderId">
       <Position>3</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="250" parent="228" name="customerOrderCustomerId">
+    <index id="253" parent="228" name="customerOrderCustomerId">
       <ColNames>customerOrderCustomerId</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="251" parent="228" name="orderId">
+    <index id="254" parent="228" name="orderId">
       <ColNames>orderId</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="252" parent="228" name="PRIMARY">
+    <key id="255" parent="228" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>orderId</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="253" parent="228" name="customerOrder_ibfk_1">
+    <foreign-key id="256" parent="228" name="customerOrder_ibfk_1">
       <ColNames>customerOrderCustomerId</ColNames>
       <RefSchemaName>nschnepple</RefSchemaName>
       <RefTableName>customer</RefTableName>
       <RefColNames>customerId</RefColNames>
     </foreign-key>
-    <column id="254" parent="229" name="itemId">
+    <column id="257" parent="229" name="itemId">
       <Position>1</Position>
       <DataType>binary(16)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="255" parent="229" name="itemCost">
+    <column id="258" parent="229" name="itemCost">
       <Position>2</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="229" name="itemName">
+    <column id="259" parent="229" name="itemName">
       <Position>3</Position>
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="229" name="itemQuantity">
+    <column id="260" parent="229" name="itemQuantity">
       <Position>4</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="258" parent="229" name="itemId">
+    <index id="261" parent="229" name="itemId">
       <ColNames>itemId</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="259" parent="229" name="PRIMARY">
+    <key id="262" parent="229" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>itemId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="260" parent="230" name="orderItemItemId">
+    <column id="263" parent="230" name="likeProfileId">
       <Position>1</Position>
       <DataType>binary(16)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="261" parent="230" name="orderItemOrderId">
+    <column id="264" parent="230" name="likeTweetId">
+      <Position>2</Position>
+      <DataType>binary(16)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="265" parent="230" name="likeDate">
+      <Position>3</Position>
+      <DataType>datetime(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="266" parent="230" name="likeProfileId">
+      <ColNames>likeProfileId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="267" parent="230" name="likeTweetId">
+      <ColNames>likeTweetId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="268" parent="230" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>likeProfileId
+likeTweetId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="269" parent="230" name="like_ibfk_1">
+      <ColNames>likeProfileId</ColNames>
+      <RefSchemaName>nschnepple</RefSchemaName>
+      <RefTableName>profile</RefTableName>
+      <RefColNames>profileId</RefColNames>
+    </foreign-key>
+    <foreign-key id="270" parent="230" name="like_ibfk_2">
+      <ColNames>likeTweetId</ColNames>
+      <RefSchemaName>nschnepple</RefSchemaName>
+      <RefTableName>tweet</RefTableName>
+      <RefColNames>tweetId</RefColNames>
+    </foreign-key>
+    <column id="271" parent="231" name="orderItemItemId">
+      <Position>1</Position>
+      <DataType>binary(16)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="272" parent="231" name="orderItemOrderId">
       <Position>2</Position>
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="262" parent="230" name="orderItemItemId">
+    <index id="273" parent="231" name="orderItemItemId">
       <ColNames>orderItemItemId</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="263" parent="230" name="orderItemOrderId">
+    <index id="274" parent="231" name="orderItemOrderId">
       <ColNames>orderItemOrderId</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="264" parent="230" name="orderItem_ibfk_1">
+    <foreign-key id="275" parent="231" name="orderItem_ibfk_1">
       <ColNames>orderItemItemId</ColNames>
       <RefSchemaName>nschnepple</RefSchemaName>
       <RefTableName>item</RefTableName>
       <RefColNames>itemId</RefColNames>
     </foreign-key>
-    <foreign-key id="265" parent="230" name="orderItem_ibfk_2">
+    <foreign-key id="276" parent="231" name="orderItem_ibfk_2">
       <ColNames>orderItemOrderId</ColNames>
       <RefSchemaName>nschnepple</RefSchemaName>
       <RefTableName>customerOrder</RefTableName>
       <RefColNames>orderId</RefColNames>
     </foreign-key>
-    <column id="266" parent="231" name="patronId">
+    <column id="277" parent="232" name="patronId">
       <Position>1</Position>
       <DataType>binary(16)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="231" name="patronFullName">
+    <column id="278" parent="232" name="patronFullName">
       <Position>2</Position>
       <DataType>varchar(128)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="231" name="patronGender">
+    <column id="279" parent="232" name="patronGender">
       <Position>3</Position>
       <DataType>varchar(64)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="269" parent="231" name="patronFullName">
+    <index id="280" parent="232" name="patronFullName">
       <ColNames>patronFullName</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="270" parent="231" name="PRIMARY">
+    <key id="281" parent="232" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>patronId</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="271" parent="232" name="taskId">
+    <column id="282" parent="233" name="profileId">
+      <Position>1</Position>
+      <DataType>binary(16)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="283" parent="233" name="profileActivationToken">
+      <Position>2</Position>
+      <DataType>char(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="284" parent="233" name="profileAtHandle">
+      <Position>3</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="285" parent="233" name="profileEmail">
+      <Position>4</Position>
+      <DataType>varchar(128)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="286" parent="233" name="profileHash">
+      <Position>5</Position>
+      <DataType>char(97)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="287" parent="233" name="profilePhone">
+      <Position>6</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="288" parent="233" name="profileEmail">
+      <ColNames>profileEmail</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="289" parent="233" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>profileId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="290" parent="233" name="profileEmail">
+      <ColNames>profileEmail</ColNames>
+      <UnderlyingIndexName>profileEmail</UnderlyingIndexName>
+    </key>
+    <column id="291" parent="234" name="taskId">
       <Position>1</Position>
       <DataType>binary(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="272" parent="232" name="taskTitle">
+    <column id="292" parent="234" name="taskTitle">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="273" parent="232" name="taskStartDate">
+    <column id="293" parent="234" name="taskStartDate">
       <Position>3</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="274" parent="232" name="taskDueDate">
+    <column id="294" parent="234" name="taskDueDate">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="275" parent="232" name="taskStatus">
+    <column id="295" parent="234" name="taskStatus">
       <Position>5</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="232" name="taskPriority">
+    <column id="296" parent="234" name="taskPriority">
       <Position>6</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="232" name="taskDescription">
+    <column id="297" parent="234" name="taskDescription">
       <Position>7</Position>
       <DataType>varchar(256)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="278" parent="232" name="taskId">
+    <index id="298" parent="234" name="taskId">
       <ColNames>taskId</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="279" parent="232" name="PRIMARY">
+    <key id="299" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>taskId</ColNames>
       <Primary>1</Primary>
     </key>
+    <column id="300" parent="235" name="tweetId">
+      <Position>1</Position>
+      <DataType>binary(16)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="301" parent="235" name="tweetProfileId">
+      <Position>2</Position>
+      <DataType>binary(16)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="302" parent="235" name="tweetContent">
+      <Position>3</Position>
+      <DataType>varchar(140)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="303" parent="235" name="tweetDate">
+      <Position>4</Position>
+      <DataType>datetime(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="304" parent="235" name="tweetProfileId">
+      <ColNames>tweetProfileId</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="305" parent="235" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>tweetId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="306" parent="235" name="tweet_ibfk_1">
+      <ColNames>tweetProfileId</ColNames>
+      <RefSchemaName>nschnepple</RefSchemaName>
+      <RefTableName>profile</RefTableName>
+      <RefColNames>profileId</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>
