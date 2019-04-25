@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="734aff92-59e6-402c-bbb1-5d3c86023f97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snap-04-18/snap.js" beforeDir="false" afterPath="$PROJECT_DIR$/snap-04-18/snap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snap-04-25/Person.php" beforeDir="false" afterPath="$PROJECT_DIR$/snap-04-25/Person.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snap-04-25/person.sql" beforeDir="false" afterPath="$PROJECT_DIR$/snap-04-25/person.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,8 +120,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/snap-04-25/Person.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="87" column="43" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+            <state relative-caret-position="690">
+              <caret line="99" column="1" lean-forward="true" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
               <folding>
                 <element signature="e#77#120#0#PHP" expanded="true" />
               </folding>
@@ -168,7 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -177,6 +175,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="snap-challenges-nschnepple19" type="b2602c69:ProjectViewProjectNode" />
+              <item name="snap-challenges-nschnepple19" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -188,17 +197,6 @@
               <item name="snap-challenges-nschnepple19" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="snap-04-25" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="snap-challenges-nschnepple19" type="b2602c69:ProjectViewProjectNode" />
-              <item name="snap-challenges-nschnepple19" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -289,7 +287,9 @@
       <workItem from="1555627671524" duration="333000" />
       <workItem from="1556201256038" duration="65000" />
       <workItem from="1556201409285" duration="382000" />
-      <workItem from="1556201814865" duration="2081000" />
+      <workItem from="1556201814865" duration="2324000" />
+      <workItem from="1556204318673" duration="218000" />
+      <workItem from="1556204556183" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="made header for html">
       <created>1554820026564</created>
@@ -337,12 +337,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31220000" />
+    <option name="totallyTimeSpent" value="31701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24606581" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -355,7 +356,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3253012" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3253012" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32970297" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -460,8 +461,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/snap-04-25/Person.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="87" column="43" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+        <state relative-caret-position="690">
+          <caret line="99" column="1" lean-forward="true" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
           <folding>
             <element signature="e#77#120#0#PHP" expanded="true" />
           </folding>

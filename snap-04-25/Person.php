@@ -87,4 +87,14 @@ class Person {
 		}
 		$this->personEmail = $newPersonEmail;
 	}
+
+	public function update(\PDO $pdo) : void {
+
+		$query = "UPDATE Person SET personEmail = :personEmail WHERE personId = :personId";
+		$statement = $pdo->prepare($query);
+
+		$parameters = ["personId" => $this->personId->getBytes(), "personEmail" => $this->personEmail];
+
+		$statement->execute($parameters);
+	}
 }
