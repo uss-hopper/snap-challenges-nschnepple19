@@ -39,11 +39,11 @@ function convertToGrams(weight, units) {
 
 }
 
-console.log(convertToGrams(56, "lbs"));
-console.log(convertToGrams(56, "oz"));
-console.log(convertToGrams(56, "kg"));
-console.log(convertToGrams(56, "mg"));
-console.log(convertToGrams(56, "g"));
+console.log(convertToGrams(7, "lbs"));
+console.log(convertToGrams(14, "oz"));
+console.log(convertToGrams(32, "kg"));
+console.log(convertToGrams(18, "mg"));
+console.log(convertToGrams(24, "g"));
 
 
 // Write a function in JavaScript that takes a number and finds the sum of all
