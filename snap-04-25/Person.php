@@ -67,6 +67,12 @@ class Person {
 		return $this->personEmail;
 	}
 
+	public function __construct(string $newPersonId, string $newPersonEmail) {
+		$this->setPersonId($newPersonEmail);
+		$this->personEmail($newPersonEmail);
+		echo "goofy";
+	}
+
 	/**
 	 * mutator method for this persons email
 	 *
