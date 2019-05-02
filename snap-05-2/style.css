@@ -1,0 +1,26 @@
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+li {
+	background: tomato;
+
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
+}
+
+ul .my-list {
+	padding: 5px 5px 5px 5px;
+	margin-top: 10px;
+	border: none;
+}
+ul li .my-item {
+	padding: 5px 5px 5px 5px;
+	margin-top: 10px;
+	border: ;
+}
