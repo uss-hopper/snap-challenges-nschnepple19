@@ -14,13 +14,12 @@ li {
 	text-align: center;
 }
 
-ul .my-list {
-	padding: 5px 5px 5px 5px;
-	margin-top: 10px;
-	border: none;
+.my-list {
+	flex-wrap: nowrap;
+	justify-content: center;
+
 }
-ul li .my-item {
-	padding: 5px 5px 5px 5px;
-	margin-top: 10px;
-	border: ;
+
+li {
+	display: inline-flex;
 }

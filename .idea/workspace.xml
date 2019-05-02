@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="734aff92-59e6-402c-bbb1-5d3c86023f97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/snap-05-2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snap-05-2/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snap-05-2/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/snap-05-2/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snap-05-2/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="360">
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -312,7 +310,7 @@
       <workItem from="1556204965433" duration="690000" />
       <workItem from="1556205868055" duration="70000" />
       <workItem from="1556632953797" duration="2970000" />
-      <workItem from="1556805882381" duration="1696000" />
+      <workItem from="1556805882381" duration="3016000" />
     </task>
     <task id="LOCAL-00001" summary="made header for html">
       <created>1554820026564</created>
@@ -360,7 +358,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37467000" />
+    <option name="totallyTimeSpent" value="38787000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -501,8 +499,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/snap-05-2/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="360">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>
